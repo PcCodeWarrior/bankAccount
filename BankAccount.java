@@ -1,20 +1,20 @@
 package com.softwarethatperforms;
 
 public class BankAccount {
-    private String  accountNumber;
-    private double  balance;
-    private String  customerName;
-    private String  email;
-    private String  phoneNumber;
+    private String accountNumber;
+    private double balance;
+    private String customerName;
+    private String email;
+    private String phoneNumber;
 
-    public BankAccount(String accountNumber, double balance, String customerName, String email, String phoneNumber ){
+
+    public BankAccount(String accountNumber, double balance, String customerName, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
-
 
     // Setters *********************************
     public void setAccountNumber(String accountNumber) {
@@ -59,13 +59,13 @@ public class BankAccount {
     }
 
 
-    public void  deposit(double amount){
-        this.balance+= amount;
+    public void deposit(double amount) {
+        this.balance += amount;
     }
 
-    public void withdraw(double amount){
-        if(this.balance>=amount){
-            this.balance-=amount;
+    public void withdraw(double amount) {
+        if (this.balance >= amount) {
+            this.balance -= amount;
         }
     }
 
